@@ -9,6 +9,38 @@ Create a web-application for working with applicants and assigning them a facult
 
 ## 1 Faculties
 
-## 1.1. View list faculties
+#### 1.1. View list faculties
 
 This mode programm intended for view list programm and number of applicants which have the faculty. Main screenplay
+
+![alt text](./admission-committee/src/main/resources/image/faculty/faculty_list.png)
+
+#### add new faculty
+
+![alt text](./admission-committee/src/main/resources/image/faculty/add_faculty.png)
+
+#### update new faculty
+
+![alt text](./admission-committee/src/main/resources/image/faculty/edit_faculty.png)
+
+#### delete faculty
+
+![alt text](./admission-committee/src/main/resources/image/faculty/faculty_dialog.png)
+
+## 2 Applicants
+
+#### 2.1. View list applicants
+
+![alt text](./admission-committee/src/main/resources/image/applicant/applicant_list.png)
+
+#### add new faculty
+
+![alt text](./admission-committee/src/main/resources/image/applicant/add_applicant.png)
+
+#### update new faculty
+
+![alt text](./admission-committee/src/main/resources/image/applicant/edit_applicant.png)
+
+#### delete faculty
+
+![alt text](./admission-committee/src/main/resources/image/applicant/applicant_dialog.png)
