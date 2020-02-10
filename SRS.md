@@ -11,21 +11,83 @@ Create a web-application for working with applicants and assigning them a facult
 
 #### 1.1. View list faculties
 
-This mode programm intended for view list programm and number of applicants which have the faculty. Main screenplay
+This mode programm intended for view list programm and number of applicants which have the faculty. Main screenplay:
+* chande item menu "Faculty";
+* view form with list all faculty. 
 
 ![alt text](./admission-committee/src/main/resources/image/faculty/faculty_list.png)
+Figure 1.1 - List faculty
 
-#### add new faculty
+Form consist two columns:
+* name faculty;
+* number of applicants.
+ 
+#### 1.2 Add new faculty
+##### Main screenplay:
+* stand in view mode of list faculty and press button "Add"
+* view form of add new  faculty;
+* administrator input data and press button "Save";
+* if data is not correct, show warning "Data is not correct";
+* if data correct, faculty is added in database;
+* if error create when saving data output message about error "Error saving data";
+* if input new  faculty already exist in database, that show list form with data, but new faculty don't save in database;
+* if faculty add successfully then open list faculty form with all information.  
+
+##### Script cancel change:
+* administrator stand in view mode by list faculty and press button "Add";
+* show form to add new faculty;
+* enter data and press button "Return";
+* data don't save in database and open list faculty form with all information. 
 
 ![alt text](./admission-committee/src/main/resources/image/faculty/add_faculty.png)
+Figure 1.2 - Add faculty
 
-#### update new faculty
+The form of input data consist:
+* buttons "Return" and "Save";
+* input data which must have new faculty.
+
+#### 1.3 Edit new faculty
+##### Main screenplay:
+* stand in view mode of list faculty and press button "Edit";
+* show edit form;
+* change data and press button "Save";
+* if data is not correct, show warning "Data is not correct";
+* if data correct, data update in database;
+* if error saving data, output message about error "Error saving data";
+* if input new  faculty already exist in database, that show list form with data, but new faculty don't save in database;
+* if faculty update successfully then open list faculty form with all updating information.  
+
+##### Script cancel change:
+* stand in view mode by list faculty and press button "Change";
+* show edit form;
+* enter data and press button "Return";
+* data don't save in database and open list faculty form with all information. 
 
 ![alt text](./admission-committee/src/main/resources/image/faculty/edit_faculty.png)
+Figure 1.3 - Edit faculty
 
-#### delete faculty
+When edit to input data:
+* input data by faculty.
+
+Limitation by validation:
+* faculty - size don't more 30 symbol and name is originality in database.  
+
+#### 1.4 Delete faculty
+##### Main screenplay:
+* stand in view mode of list faculty and press button "Delete";
+* There is control to delete faculty, is used faculty in some applicant;
+* if faculty used, the dialog window show message "This faculty don't delete? because connection between faculty and applicant";
+* if faculty can delete, show dialog ti delete "Delete faculty?" with confim;
+* press button "Delete";
+* deleting faculty in database; 
+* if error deleting data, output message about error "Error deleting data";
+* if faculty delete successfully then open list faculty form with all updating information.  
+ 
+##### Script cancel change:
+
 
 ![alt text](./admission-committee/src/main/resources/image/faculty/faculty_dialog.png)
+Figure 1.4 - Confirm delete faculty
 
 ## 2 Applicants
 
