@@ -16,6 +16,7 @@ This mode programm intended for view list programm and number of applicants whic
 * view form with list all faculty. 
 
 ![alt text](./admission-committee/src/main/resources/image/faculty/faculty_list.png)
+
 Figure 1.1 - List faculty
 
 Form consist two columns:
@@ -25,8 +26,9 @@ Form consist two columns:
 #### 1.2 Add new faculty
 ##### Main screenplay:
 * stand in view mode of list faculty and press button "Add"
-* view form of add new  faculty;
-* administrator input data and press button "Save";
+* view form of add new faculty;
+* input data and press button "Save";
+* if the data is entered with a mistake, you can reset by pressing the button "Reset"
 * if data is not correct, show warning "Data is not correct";
 * if data correct, faculty is added in database;
 * if error create when saving data output message about error "Error saving data";
@@ -40,6 +42,7 @@ Form consist two columns:
 * data don't save in database and open list faculty form with all information. 
 
 ![alt text](./admission-committee/src/main/resources/image/faculty/add_faculty.png)
+
 Figure 1.2 - Add faculty
 
 The form of input data consist:
@@ -51,6 +54,7 @@ The form of input data consist:
 * stand in view mode of list faculty and press button "Edit";
 * show edit form;
 * change data and press button "Save";
+* if the data is entered with a mistake, you can reset by pressing the button "Reset"
 * if data is not correct, show warning "Data is not correct";
 * if data correct, data update in database;
 * if error saving data, output message about error "Error saving data";
@@ -64,6 +68,7 @@ The form of input data consist:
 * data don't save in database and open list faculty form with all information. 
 
 ![alt text](./admission-committee/src/main/resources/image/faculty/edit_faculty.png)
+
 Figure 1.3 - Edit faculty
 
 When edit to input data:
@@ -84,10 +89,17 @@ Limitation by validation:
 * if faculty delete successfully then open list faculty form with all updating information.  
  
 ##### Script cancel change:
+* stand in view mode of list faculty and press button "Delete" in change line;
+* show dialog confim to delete "Delete faculty "economic?"
+* press button "Cancel";
+* open view form for list faculty with updates. 
 
 
 ![alt text](./admission-committee/src/main/resources/image/faculty/faculty_dialog.png)
+
 Figure 1.4 - Confirm delete faculty
+
+
 
 ## 2 Applicants
 
