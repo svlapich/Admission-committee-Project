@@ -36,7 +36,7 @@ Form consist two columns:
 * if faculty add successfully then open list faculty form with all information.  
 
 ##### Script cancel change:
-* administrator stand in view mode by list faculty and press button "Add";
+* stand in view mode by list faculty and press button "Add";
 * show form to add new faculty;
 * enter data and press button "Return";
 * data don't save in database and open list faculty form with all information. 
@@ -46,7 +46,7 @@ Form consist two columns:
 Figure 1.2 - Add faculty
 
 The form of input data consist:
-* buttons "Return" and "Save";
+* buttons "Return", "Save" and "Reset"";
 * input data which must have new faculty.
 
 #### 1.3 Edit new faculty
@@ -120,12 +120,41 @@ Form consist three columns:
 * date to feed documents.
  
 
+####Filter
+This component is intended to show list applicants, who feed documents in special period.  
+* if no data in field, list show all applicants;
+* if no first date, then filter last date only;
+* if no last date, then filter first date only;
+* the first date is more then last date;
+* new information is showed only press button "Update"
+
 
 #### 2.2. Add new faculty
+* stand in view mode of list applicants and press button "Add"
+* view form of add new applicant;
+* input data and press button "Save";
+* if the data is entered with a mistake, can reset by pressing the button "Reset"
+* if data is not correct, show warning "Data is not correct";
+* if data correct, applicant is added in database;
+* if error create when saving data output message about error "Error saving data";
+* if applicant add successfully then open list applicants form with all information.  
+
+##### Script cancel change:
+* stand in view mode by list applicant and press button "Add";
+* show form to add new applicant;
+* enter data and press button "Return";
+* data don't save in database and open list applicant form with all information.
 
 ![alt text](./admission-committee/src/main/resources/image/applicant/add_applicant.png)
 
-#### update new faculty
+Figure 2.2 - Add applicant
+
+The form of input data consist:
+* buttons "Return", "Save" and "Reset"";
+* input data which must have new applicant;
+* field of change faculty.
+
+#### 2.3 Edit applicant
 
 ![alt text](./admission-committee/src/main/resources/image/applicant/edit_applicant.png)
 
