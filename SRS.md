@@ -3,7 +3,7 @@ The university has a system for applying for studies at a particular faculty. Th
 
 ## Vision
 Create a web-application for working with applicants and assigning them a faculty in the system. The application must implement the next functions:
-* view the list of applicants and edit them.
+* view the list of faculties and edit them.
 * show all applicants in system.
 * view the list of faculties and the number of applicants in each of them.
 
@@ -11,10 +11,10 @@ Create a web-application for working with applicants and assigning them a facult
 
 #### 1.1. View list faculties
 
-This mode programm intended for view list programm and number of applicants which have the faculty. Main screenplay:
-* chande item menu "Faculty";
+This mode programm is intended for view list programm and number of applicants which have the faculty. Main screenplay:
+* change item menu "Faculty";
 * view form with list all faculty. 
-
+faculties
 ![alt text](./admission-committee/src/main/resources/image/faculty/faculty_list.png)
 
 Figure 1.1 - List faculty
@@ -103,9 +103,17 @@ Figure 1.4 - Confirm delete faculty
 
 ## 2 Applicants
 
+This mode is intended for show applicant's list.
+##### Main screenplay:
+* view the list of applicants and edit them.
+* show all applicants in system.
+ 
+ 
 #### 2.1. View list applicants
 
 ![alt text](./admission-committee/src/main/resources/image/applicant/applicant_list.png)
+
+Figure 2.1 - List applicants
 
 #### add new faculty
 
