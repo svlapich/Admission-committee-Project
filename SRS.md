@@ -99,8 +99,6 @@ Limitation by validation:
 
 Figure 1.4 - Confirm delete faculty
 
-
-
 ## 2 Applicants
 
 This mode is intended for show applicant's list.
@@ -115,7 +113,15 @@ This mode is intended for show applicant's list.
 
 Figure 2.1 - List applicants
 
-#### add new faculty
+Form consist three columns:
+* name faculty;
+* name applicant;
+* mark;
+* date to feed documents.
+ 
+
+
+#### 2.2. Add new faculty
 
 ![alt text](./admission-committee/src/main/resources/image/applicant/add_applicant.png)
 
