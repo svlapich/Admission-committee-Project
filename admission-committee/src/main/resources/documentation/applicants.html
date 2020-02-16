@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Department List</title>
+    <link href="style.css" rel="stylesheet" th:href="@{/style.css}"/>
+    <link href="../style.css" th:href="@{/style.css}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body class="bg-display">
+<header>
+    <nav class="pl-2 navbar navbar-expand-sm navbar-dark text-light">
+        <a class="btn-outline-dark badge-pill" href="index.html"><img src="../image/home.png" height="40" width="40"/></a>
+        <ul class="navbar-nav">
+            <a class="part_off nav-link new_size btn-outline-dark badge-pill" href="faculties.html">Faculty</a>
+            <a class="part_on text-white nav-link new_size " href="applicants.html">Applicant</a>
+        </ul>
+    </nav>
+    <hr />
+    <h2>
+        <div>
+            <ul>
+                <div class="d-flex justify-content-between">
+                    <div class="d-inline p-2 text-white"><a class="faculty_color text-truncate"><strong>Applicant</strong></a></div>
+                    <div class="d-inline p-2 text-white">
+                        <a class="nav-link text-white text-center right_text btn-outline-dark badge-pill border border-light" href="applicant.html" title="Add faculty"> + <span class="d-none d-sm-inline">Add</span></a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+    </h2>
+</header>
+
+<section>
+    <thead>
+    <div class="row bg-light p-3 border_table mx-2">
+        <div class="col-2 text-center text-black new_size text-truncate"><strong>Faculty</strong></div>
+        <div class="col-4 text-center text-black new_size text-truncate"><strong>Name applicant</strong></div>
+        <div class="col-1 text-center text-black new_size text-truncate"><strong>Mark</strong></div>
+        <div class="col-3 text-center text-black new_size text-truncate"><strong>Data</strong></div>
+        <div class="col-1 text-center text-black new_size"></div>
+        <div class="col-1 text-center text-black new_size"></div>
+    </div>
+    </thead>
+    <tbody>
+    <div class="row p-1 mx-2 bg-display border_cell">
+        <div class="col-2 text-center text-white new_size nav-link text-truncate">economic</div>
+        <div class="col-4 text-center text-white new_size nav-link text-truncate">Nina Smirnova</div>
+        <div class="col-1 text-center text-white new_size nav-link">310</div>
+        <div class="col-3 text-center text-white new_size nav-link text-truncate">01.08.2020</div>
+        <div class="col-1">
+            <a class="nav-link text-white text-center new_size btn-outline-dark badge-pill" href="faculty.html" title="Update faculty">&#9998;<span class="d-none d-lg-inline">Edit</span></a>
+        </div>
+        <div class="col-1">
+            <a class="nav-link text-white text-center new_size btn-outline-dark badge-pill" href="faculty.html" title="Delete faculty">&#128465;<span class="d-none d-xl-inline">Delete</span></a>
+        </div>
+    </div>
+    <div class="row p-1 mx-2 bg-display border_cell">
+        <div class="col-2 text-center text-white new_size nav-link text-truncate">structural</div>
+        <div class="col-4 text-center text-white new_size nav-link text-truncate">Slava Ignatiuk</div>
+        <div class="col-1 text-center text-white new_size nav-link">290</div>
+        <div class="col-3 text-center text-white new_size nav-link text-truncate">01.08.2020</div>
+        <div class="col-1">
+            <a class="nav-link text-white text-center new_size btn-outline-dark badge-pill" href="faculty.html" title="Update faculty">&#9998;<span class="d-none d-lg-inline">Edit</span></a>
+        </div>
+        <div class="col-1">
+            <a class="nav-link text-white text-center new_size btn-outline-dark badge-pill" href="faculty.html" title="Delete faculty">&#128465;<span class="d-none d-xl-inline">Delete</span></a>
+        </div>
+    </div>
+    <div class="row p-1 mx-2 bg-display border_cell">
+        <div class="col-2 text-center text-white new_size nav-link text-truncate">information</div>
+        <div class="col-4 text-center text-white new_size nav-link text-truncate">Mark Averin</div>
+        <div class="col-1 text-center text-white new_size nav-link">320</div>
+        <div class="col-3 text-center text-white new_size nav-link text-truncate">01.08.2020</div>
+        <div class="col-1">
+            <a class="nav-link text-white text-center new_size btn-outline-dark badge-pill" href="faculty.html" title="Update faculty">&#9998;<span class="d-none d-lg-inline">Edit</span></a>
+        </div>
+        <div class="col-1">
+            <a class="nav-link text-white text-center new_size btn-outline-dark badge-pill" href="faculty.html" title="Delete faculty">&#128465;<span class="d-none d-xl-inline">Delete</span></a>
+        </div>
+    </div>
+    <div class="row p-1 mx-2 bg-display border_cell">
+        <div class="col-2 text-center text-white new_size nav-link text-truncate">information</div>
+        <div class="col-4 text-center text-white new_size nav-link text-truncate">Dima Petrov</div>
+        <div class="col-1 text-center text-white new_size nav-link">277</div>
+        <div class="col-3 text-center text-white new_size nav-link text-truncate">01.08.2020</div>
+        <div class="col-1">
+            <a class="nav-link text-white text-center new_size btn-outline-dark badge-pill" href="faculty.html" title="Update faculty">&#9998;<span class="d-none d-lg-inline">Edit</span></a>
+        </div>
+        <div class="col-1">
+            <a class="nav-link text-white text-center new_size btn-outline-dark badge-pill" href="faculty.html" title="Delete faculty">&#128465;<span class="d-none d-xl-inline">Delete</span></a>
+        </div>
+    </div>
+
+    </tbody>
+</section>
+
+<footer>
+    <hr/>
+    <p class="text-center part_td">&copy; 2020</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
