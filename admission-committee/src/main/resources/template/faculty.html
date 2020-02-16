@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Department List</title>
+    <link href="style.css" rel="stylesheet" th:href="@{/style.css}"/>
+    <link href="../style.css" th:href="@{/style.css}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body class="bg-display">
+<header>
+    <nav class="pl-2 navbar navbar-expand-sm navbar-dark text-light">
+        <a class="btn-outline-dark badge-pill" href="index.html"><img src="../image/home.png" height="40" width="40"/></a>
+        <ul class="navbar-nav">
+            <a class="part_on text-white nav-link new_size btn-outline-dark badge-pill" href="faculties.html">Faculty</a>
+            <a class="part_off nav-link  new_size btn-outline-dark badge-pill" href="applicants.html">Applicant</a>
+        </ul>
+    </nav>
+    <hr />
+    <h3>
+            <ul>
+                <div class="d-flex justify-content-between">
+                    <div class="d-inline p-2 text-white d-flex justify-content-start">
+                        <a class="nav-link text-white text-center right_text btn-outline-dark badge-pill border border-light" href="faculties.html" title="Back to list faculty"><span class="d-none d-sm-inline">&#9668;</span></a>
+                        <strong>&nbsp;&nbsp;Add new faculty</strong>
+                        </div>
+                </div>
+            </ul>
+        </div>
+    </h3>
+</header>
+<section>
+    <div class="row bg-display p-2 m-2">
+        <div class="d-flex justify-content-between col-9 text-center text-black new_size text-truncate">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Name faculty: </span>
+                </div>
+                <input type="text" class="form-control d-none d-sm-inline" placeholder="information" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="col-3 text-center text-black new_size text-truncate d-flex justify-content-end mb-2">
+            <a class="d-inline nav-link text-white btn-outline-dark badge-pill border border-light" href="faculty.html" title="Reset">Reset</a>
+            <a class="d-inline nav-link"></a>
+            <a class="d-inline nav-link text-white btn-outline-dark badge-pill border border-light" href="faculties.html" title="Back">Cancel</span></a>
+            <a class="d-inline nav-link"></a>
+            <a class="d-inline nav-link text-white btn-outline-dark badge-pill border border-light" href="faculties.html" title="Add faculty">&#128190; <span class="d-none d-sm-inline">Save</span></a>
+        </div>
+    </div>
+</section>
+<footer>
+    <hr/>
+    <p class="text-center part_td">&copy; 2020</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
